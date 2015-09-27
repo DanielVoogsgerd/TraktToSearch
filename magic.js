@@ -12,13 +12,9 @@ if(document.querySelector('meta[property="og:type"]').content == "video.movie") 
             '<div class="under-info">' +
             '</div>'+
         '</div>'+
-        '<div class="loading">'+
-            '<div class="icon">'+
-                '<div class="fa fa-refresh fa-spin">'+
-                '</div>'+
-            '</div>'+
-        '</div>'+
     '</a>';
 
-    actionButtonDiv.innerHTML = actionButtonDiv.innerHTML + buttonCode;
+    //actionButtonDiv.innerHTML = actionButtonDiv.innerHTML + buttonCode;
+
+    jQuery(actionButtonDiv).append(buttonCode);
 }
